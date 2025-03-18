@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47C03638-BAE2-4764-8B22-224F5A618221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barly.Domain", "src\Barly.Domain\Barly.Domain.csproj", "{3EE15126-0847-4DFA-AF0B-8470CA9DA41C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barly.WebApi", "src\Barly.WebApi\Barly.WebApi.csproj", "{56D0934A-0993-444B-99FD-8E35110185D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EE15126-0847-4DFA-AF0B-8470CA9DA41C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE15126-0847-4DFA-AF0B-8470CA9DA41C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE15126-0847-4DFA-AF0B-8470CA9DA41C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE15126-0847-4DFA-AF0B-8470CA9DA41C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D0934A-0993-444B-99FD-8E35110185D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D0934A-0993-444B-99FD-8E35110185D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D0934A-0993-444B-99FD-8E35110185D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D0934A-0993-444B-99FD-8E35110185D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EE15126-0847-4DFA-AF0B-8470CA9DA41C} = {47C03638-BAE2-4764-8B22-224F5A618221}
+		{56D0934A-0993-444B-99FD-8E35110185D3} = {47C03638-BAE2-4764-8B22-224F5A618221}
+	EndGlobalSection
+EndGlobal
