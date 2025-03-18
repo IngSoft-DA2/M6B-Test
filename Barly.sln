@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barly.Domain", "src\Barly.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barly.WebApi", "src\Barly.WebApi\Barly.WebApi.csproj", "{56D0934A-0993-444B-99FD-8E35110185D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barly.BusinessLogic", "src\Barly.BusinessLogic\Barly.BusinessLogic.csproj", "{FDA073B1-5658-4B43-BD7B-11A6255A4914}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{56D0934A-0993-444B-99FD-8E35110185D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56D0934A-0993-444B-99FD-8E35110185D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56D0934A-0993-444B-99FD-8E35110185D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA073B1-5658-4B43-BD7B-11A6255A4914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA073B1-5658-4B43-BD7B-11A6255A4914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA073B1-5658-4B43-BD7B-11A6255A4914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA073B1-5658-4B43-BD7B-11A6255A4914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3EE15126-0847-4DFA-AF0B-8470CA9DA41C} = {47C03638-BAE2-4764-8B22-224F5A618221}
 		{56D0934A-0993-444B-99FD-8E35110185D3} = {47C03638-BAE2-4764-8B22-224F5A618221}
+		{FDA073B1-5658-4B43-BD7B-11A6255A4914} = {47C03638-BAE2-4764-8B22-224F5A618221}
 	EndGlobalSection
 EndGlobal
