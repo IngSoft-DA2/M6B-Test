@@ -11,4 +11,4 @@ jobs:
     uses: IngSoft-DA2/workflows/.github/workflows/reusable-build-test-analysis.yml@main
     permissions: write-all
     with:
-      solution-name: '<<el nombre del archivo de tu solucion, por ejemplo: Test.sln>>'
+      solution-name: 'Barly.sln'
