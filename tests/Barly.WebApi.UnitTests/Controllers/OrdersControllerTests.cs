@@ -1,10 +1,9 @@
-namespace Barly.WebApi.UnitTests;
-
 using Barly.BusinessLogic.Interfaces;
 using Barly.Domain;
 using Barly.WebApi.Controllers;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
+
+namespace Barly.WebApi.UnitTests.Controllers;
 
 [TestClass]
 public class OrdersControllerTests
