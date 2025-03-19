@@ -7,8 +7,8 @@ namespace Barly.WebApi.Controllers;
 public class OrdersController(IOrderService orderService) : ControllerBase
 {
     [HttpGet(Name = "GetOrders")]
-    public IEnumerable<Order> Get()
+    public IActionResult Get()
     {
-        return orderService.GetOrders();
+        return Ok(orderService.GetOrders());
     }
 }

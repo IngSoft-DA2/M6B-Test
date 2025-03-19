@@ -1,6 +1,7 @@
 using Barly.BusinessLogic.Interfaces;
 using Barly.Domain;
 using Barly.WebApi.Controllers;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
 
 namespace Barly.WebApi.UnitTests.Controllers;
@@ -26,10 +27,12 @@ public class OrdersControllerTests
         _orderServiceMock!.Setup(service => service.GetOrders()).Returns([order]);
 
         // Act
-        IEnumerable<Order> result = _ordersController!.Get();
+        OkObjectResult response = (_ordersController!.Get() as OkObjectResult)!;
 
         // Assert
-        Assert.IsNotNull(result);
+        Assert.IsNotNull(response.Value);
+
+        var result = (List<Order>)response.Value;
         Assert.AreEqual(order, result.First());
     }
 
@@ -40,10 +43,12 @@ public class OrdersControllerTests
         _orderServiceMock!.Setup(service => service.GetOrders()).Returns([]);
 
         // Act
-        IEnumerable<Order> result = _ordersController!.Get();
+        OkObjectResult response = (_ordersController!.Get() as OkObjectResult)!;
 
         // Assert
-        Assert.IsNotNull(result);
-        Assert.AreEqual(0, result.Count());
+        Assert.IsNotNull(response.Value);
+
+        var result = (List<Order>)response.Value;
+        Assert.AreEqual(0, result.Count);
     }
 }
