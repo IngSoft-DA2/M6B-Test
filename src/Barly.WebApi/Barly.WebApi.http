@@ -1,0 +1,6 @@
+@Barly.WebApi_HostAddress = http://localhost:5052
+
+GET {{Barly.WebApi_HostAddress}}/orders/
+Accept: application/json
+
+###
