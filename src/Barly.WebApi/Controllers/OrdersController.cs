@@ -9,6 +9,6 @@ public class OrdersController(IOrderService orderService) : ControllerBase
     [HttpGet(Name = "GetOrders")]
     public IActionResult Get()
     {
-        return NotFound(orderService.GetOrders());
+        return Ok(orderService.GetOrders());
     }
 }
