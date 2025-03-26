@@ -17,5 +17,6 @@ public class OrdersController : ControllerBase
     public IActionResult Get()
     {
         return Ok(_orderService.GetOrders());
+
     }
 }
