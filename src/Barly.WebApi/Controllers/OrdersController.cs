@@ -4,11 +4,18 @@ namespace Barly.WebApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class OrdersController(IOrderService orderService) : ControllerBase
+public class OrdersController : ControllerBase
 {
+    private readonly IOrderService _orderService;
+
+    public OrdersController(IOrderService orderService)
+    {
+        _orderService = orderService;
+    }
+
     [HttpGet(Name = "GetOrders")]
     public IActionResult Get()
     {
-        return Ok(orderService.GetOrders());
+        return Ok(_orderService.GetOrders());
     }
 }
